@@ -1,0 +1,85 @@
+<!-- <h2>login</h2>
+
+<form action="/session" method="post">
+	<label for="">email</label>
+	<input type="text" name="email">
+	<label for="">password</label>
+	<input type="password" name="password">
+
+	<button>login</button>
+</form> -->
+<p>show.erb</p>
+line 8
+	<!-- <p>Posted by: <%= User.find(photographer.created_by).name %> </p>	 --> 	
+
+
+<P>
+	<% if session[:user_id] == nil %>
+	<% else %>
+	<% end %>
+</P>
+
+<p>
+	<% if session[:user_id] == nil %>
+			<button onclick="deletewarning()">Delete</button>			
+			<script> function deletewarning() {
+	    						alert("Please log in.");
+							}</script>
+	<% else %> 
+</p>
+
+
+<div class="container">
+
+</div>
+	<div class="signup_main">
+	</div>
+
+<div class="postnew_link"><a href="/photographers/new">Post a new photographer</a></div>
+		<div><a href="/photographers/recent">Most Recent</a></div>
+		<a href="/photographers/top4">Top 4</a>
+
+
+<div class="postnew_link"><a href="/photographers/new">Post a new photographer</a></div>
+		<div class="recent_list">
+			<h2>Most Recent</h2>
+			<% @photographers.each do |photographer| %>
+				<p>
+					<a href="/photographers/<%= photographer.id %>">
+					<%= photographer.name %>
+					</a>
+				</p>
+			<% end %>
+		</div>
+
+
+<% if session[:user_id] == nil %>
+<% else %>
+<% end %>
+
+<P></P>
+	comment.created_by = params[:id]
+dui  comment.created_by = session[:user_id]
+
+<%= comment.created_by.name  %>
+<%= session[:user_id].name  %> 
+<%= User.find(session[:user_id]).name %> 
+
+photographer.id.to_s
+
+<!-- <script> function failedLogin() {
+	    						alert("Login failed. Try again.");
+							}</script> -->
+
+
+<div class="postnew" onclick="myFunction()">Post a new photographer
+  <span class="popuptext" id="myPopup">Please log in first!</span>
+</div>
+
+<script>
+	function myFunction() {
+	    var postnew = document.getElementById("myPopup");
+	    popup.classList.toggle("show");
+	}
+</script>
+

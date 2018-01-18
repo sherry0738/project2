@@ -1,0 +1,146 @@
+* {
+	box-sizing: border-box;
+}
+
+/*layout page*/
+body {
+	background-color: rgb(24, 26, 34);
+}
+
+header {
+	background-color: rgb(44, 46, 51);
+	padding: 50px;
+}
+a {
+	under_line???
+}
+
+h2 {
+
+}
+.nav {
+	display: inline;
+    font-family: 'Lobster', cursive;
+    font-size: 110px;
+}
+.search {
+	display: ;
+	font-family: 'Lobster', cursive;
+    font-size: 110px;
+}
+.search_box {
+	height: 110px;
+    width: 800px;
+    margin: 0 0;
+    font-size: 80px;
+}
+.search_btn {
+	/*add style*/
+	font-size: 70px;
+}
+.logout {
+	font-size: 50px;
+}
+.logout_btn {
+	font-size: 55px;
+}
+
+main {
+
+}
+footer {
+	display: ruby-base-container;
+	justify-content:space-between;
+ 	text-transform: uppercase;
+ 	padding: 0 5px;
+ 	background-color: lightgray;
+ 	color: darkgray;
+ 	font-size: 12px;
+ 	letter-spacing: .05em;
+ 	font-weight: 100;
+ 	align-items: flex-end;
+}
+.copyright {
+ 	float: left;
+ 	font-family: "Raleway", sans-serif;
+}
+.message {
+ 	float: right;
+ 	font-family: "Raleway", sans-serif;
+}
+.clearfix:after {
+ 	visibility: hidden;
+ 	display: block;
+ 	content: " ";
+ 	clear: both;
+ 	height: 0;
+ 	font-size: 0;
+ }
+ /*index page*/
+ .container {
+	background-color: #ffc0cb;
+	display: flex;
+	width: 90%;
+	/*padding-left: 30px;
+	padding-bottom: 20px;
+	padding-right: 30px;*/
+	
+	margin-right: 60px;
+	margin-left: 60px;
+	margin-bottom: 20px;
+}
+
+.login {
+	padding: 30px 30px 30px 30
+	font-family:;
+}
+.signup_page_main {
+
+}
+/*edit page*/
+.edit_main {
+
+}
+.result_main {
+
+}
+.signup_main{
+
+}
+.new_main {
+
+}
+.show_main {
+
+}
+.show_details {
+
+}
+.createdby_only_show {
+
+}
+.login_only_show {
+
+}
+.comments {
+
+}
+.index_main {
+
+}
+.login_btn {
+
+}
+.index_list {
+
+}
+.recent_list{
+
+}
+.top4 {
+	
+}
+ul {
+ list-style-type: none;
+ }
+

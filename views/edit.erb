@@ -1,0 +1,25 @@
+<div class="container">
+
+	<h2>Edit your photographer</h2>
+	<div class="edit_main">
+		<form action="/photographers/<%= @photographer.id %>" method="post">	
+			<input type="hidden" name="_method" value="put">
+
+			<label for="">Name</label>
+			<input type="text" name="name" value="<%= @photographer.name %>">
+
+			<label for="">image_url</label>
+			<input type="text" name="image_url" value="<%= @photographer.image_url%>">
+
+			<label for="">Phone</label>
+			<input type="text" name="phone" value="<%= @photographer.phone%>">
+
+			<label for="">Address</label>
+			<input type="text" name="address" value="<%= @photographer.address%>">
+
+			<label for="">Website</label>
+			<input type="text" name="website" value="<%= @photographer.website%>">
+			<button type="submit">Update</button>
+		</form>
+	</div>
+</div>

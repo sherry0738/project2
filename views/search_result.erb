@@ -1,0 +1,18 @@
+<div class="container">
+	<h2>List of photographers you searched for:</h2>
+	<ul class="result_main">
+		<% @photographers.each do |photographer| %>
+			<li>
+				<img src="">
+				<a href="/photographers/<%= photographer.id %>"><%= photographer.name %></a>
+			</li>				
+			
+		<% end %>
+	</ul>
+</div>
+
+
+
+
+
+

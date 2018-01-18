@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>RMP</title>
+  <link rel='stylesheet' href='/stylesheets/main.css'>
+</head>
+<body background="https://iso.500px.com/wp-content/uploads/2016/05/stock-photo-136664977.jpg">
+	<header>
+		<h1>Rate My Photographer</h1>
+		<div class="nav">
+			<ul>
+				<li><a href="/">Home</a></li>
+				<li><a href="/about">About</a></li>		
+			</ul>			
+		</div>
+  		<div class="search">
+			<form action="/search">
+				<input class="search_box" type="text" name="photographer_name" placeholder="Find the perfect stock Photographers...">
+				<button class="search_btn" type="submit">Search</button>	
+			</form>
+		</div>
+		<div class="logout">
+			<% if session[:user_id] %>
+			logged in as <%= User.find(session[:user_id]).email %>						
+				<form action="/session" method="post">
+					<input type="hidden" name="_method" value="delete">
+					<button class="logout_btn">logout</button>	
+				</form>			
+			<% end %>
+		</div>
+	</header>
+	<main>
+ 	 <%= yield %>
+	</main>
+
+	<footer class="clearfix">
+	    <p class="copyright">Copyright 2018</p>
+	    <p class="message">Created with &hearts; by <span class="name">Sherry</span></p>
+  	</footer>
+</body>
+</html>
