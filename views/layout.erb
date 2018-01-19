@@ -7,12 +7,12 @@
 </head>
 <body background="https://iso.500px.com/wp-content/uploads/2016/05/stock-photo-136664977.jpg">
 	<header>
-		<h1>Rate My Photographer</h1>
-		<div class="nav">
-			<ul>
+		<div class="menu">
+			<h1>Rate My Photographer</h1>
+			<ul class="nav">
 				<li><a href="/">Home</a></li>
 				<li><a href="/about">About</a></li>		
-			</ul>			
+			</ul>					
 		</div>
   		<div class="search">
 			<form action="/search">
@@ -22,7 +22,7 @@
 		</div>
 		<div class="logout">
 			<% if session[:user_id] %>
-			logged in as <%= User.find(session[:user_id]).email %>						
+			<p class="loggedin_msg">logged in as <%= User.find(session[:user_id]).email %></p>					
 				<form action="/session" method="post">
 					<input type="hidden" name="_method" value="delete">
 					<button class="logout_btn">logout</button>	

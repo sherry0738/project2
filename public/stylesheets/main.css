@@ -5,48 +5,92 @@
 /*layout page*/
 body {
 	background-color: rgb(24, 26, 34);
+	    background-image: url("https://www.apertureacademy.com/img/guests/art-wolfe-gp1015.jpg")
+	    background-repeat: repeat;
 }
 
-header {
-	background-color: rgb(44, 46, 51);
-	padding: 50px;
-}
 a {
-	under_line???
+	text-decoration: none;
+
 }
+header {
+	display: flex;
+	flex-direction: row;
+	background-color: rgb(44, 46, 51);
+	/*background-color: white;*/
+	padding: 0;
+	color: white;
+	justify-content: space-between;
+	height: 120px;
+	width: 100%;
+}
+.menu {
+	float: left;
+	display: flex;
+	flex-direction: column;
+	height: 120px;
+}
+h1 {
 
-h2 {
-
+	font-family: 'Lobster', cursive;
+	font-size: 30px;
 }
 .nav {
 	display: inline;
+	flex-direction: row;
     font-family: 'Lobster', cursive;
-    font-size: 110px;
+    font-size: 10px;
+    color: white;
+    flex-direction: row;
+}
+.nav a:visited {
+	color: white;
+	font-size: 14px;
+	flex-direction: row;
+
 }
 .search {
-	display: ;
+	display: flex;
 	font-family: 'Lobster', cursive;
-    font-size: 110px;
+    /*align-items: center;*/
+    justify-content: center;
+    flex-direction: column;
+    height: 120px;
 }
 .search_box {
-	height: 110px;
-    width: 800px;
+	height: 35px;
+    width: 210px;
     margin: 0 0;
-    font-size: 80px;
+    font-size: 11px;
+    padding: 4px 1px 4px 1px;
+
 }
 .search_btn {
 	/*add style*/
-	font-size: 70px;
+	font-size: 20px;
+	width: 90px;
+	background-color: lightblue;
+	padding: 3px 1px 7px 1px;
 }
 .logout {
-	font-size: 50px;
+	height: 120px;
+	display: flex;
+	float: right;
+	font-size: 18px;
+	align-items: flex-end;
+	/*justify-content: flex-end;*/
+}
+.loggedin_msg {
+	flex-direction: row;
 }
 .logout_btn {
-	font-size: 55px;
+flex-direction: row;
+	font-size: 15px;
+	width: 60px;
+	background-color: lightblue;
+	padding: 1px;
 }
-
 main {
-
 }
 footer {
 	display: ruby-base-container;
@@ -59,6 +103,7 @@ footer {
  	letter-spacing: .05em;
  	font-weight: 100;
  	align-items: flex-end;
+ 	margin-bottom: 10px;
 }
 .copyright {
  	float: left;
@@ -76,23 +121,51 @@ footer {
  	height: 0;
  	font-size: 0;
  }
+.postnew_link {
+	display: flex;
+	float: right;
+}
+.login {
+	display: flex;
+	flex-direction: column;
+	height: 180px;
+	width: 50%;
+	float: right;
+	justify-content: space-between;
+}
+h2, h3 {
+font-size: 30px;
+color: white;
+}
+img {
+    height:200px
+    width:auto;/*maintain aspect ratio*/
+    max-width:700px;
+}
+
+
+
  /*index page*/
  .container {
 	background-color: #ffc0cb;
 	display: flex;
-	width: 90%;
+	height: 640px;
+	width: 1200px;
+	padding-top: 20px;
+	/*padding-bottom: 5px;*/
+	font-size: 15px;
 	/*padding-left: 30px;
-	padding-bottom: 20px;
-	padding-right: 30px;*/
 	
+	padding-right: 30px;*/
+	color: white;
 	margin-right: 60px;
-	margin-left: 60px;
-	margin-bottom: 20px;
+	margin-left: 90px;
+	margin-bottom: 5px;
 }
 
 .login {
-	padding: 30px 30px 30px 30
-	font-family:;
+	padding: 30px 30px 30px 30;
+	
 }
 .signup_page_main {
 
@@ -108,10 +181,15 @@ footer {
 
 }
 .new_main {
-
+	height: 640px;
+	width: 1200px;
+	font-size: 17px;
+	color: white;
 }
+.new_main input {
 .show_main {
-
+	font-size: 17px;
+	color: white;
 }
 .show_details {
 
@@ -119,11 +197,31 @@ footer {
 .createdby_only_show {
 
 }
+.createdby_only_show a:visited {
+	color: white;
+	font-size: 14px;
+}
 .login_only_show {
 
 }
+.login_only_show a:visited {
+	color: white;
+	font-size: 14px; 
+}
 .comments {
+display: block;
+}
+.comment_main {
+display: inline-block;
+float:;
+}
+.comment_body {
+display: inline-block;
 
+}
+.com_created {
+display: inline-block;
+float: right;
 }
 .index_main {
 
@@ -134,8 +232,8 @@ footer {
 .index_list {
 
 }
-.recent_list{
-
+.recent_list a:visited {
+	color: white;
 }
 .top4 {
 	

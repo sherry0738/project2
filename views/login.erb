@@ -83,3 +83,16 @@ photographer.id.to_s
 	}
 </script>
 
+
+
+
+
+<div class="p_detail">
+			<ul>
+				<li>Rating: <%= @photographer.rate %></li>
+				<li>Telphone: <%= @photographer.phone %></li>
+				<li>Location: <%= @photographer.address %></li>
+				<li>website: <%= @photographer.website %></li>
+				<li>Posted by: <%= User.find(@photographer.created_by).name %></li>
+			</ul>
+		</div>	

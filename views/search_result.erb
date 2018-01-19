@@ -3,7 +3,7 @@
 	<ul class="result_main">
 		<% @photographers.each do |photographer| %>
 			<li>
-				<img src="">
+				<img src="/photographers/<%= photographer.id %>">
 				<a href="/photographers/<%= photographer.id %>"><%= photographer.name %></a>
 			</li>				
 			

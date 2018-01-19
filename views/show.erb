@@ -38,15 +38,15 @@
 		<div class="comments">
 			<p>Comments :</p>
 			<% if session[:user_id] == nil %>
-			<p>Want to add your comments ? <a href="/">Log in</a></p>
+			<p>Want to try to rate photographers ? Add your comments ? <a href="/">Log in</a></p>
 				
 			<% end %>
 			<hr>
 			<% @comments.each do |comment| %>
 				<hr>
-				<div>
-					<p><%= comment.content %></p>
-					<p>comments by <%= User.find(comment.created_by).name %>  at  <%= comment.created_at %></p>
+				<div class="comment_main">
+					<p class="comment_body"><%= comment.content %></p>
+					<p class="com_created">comments by <%= User.find(comment.created_by).name %>  at  <%= comment.created_at %></p>
 				</div>
 			<% end %>
 		</div>
